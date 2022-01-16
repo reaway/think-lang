@@ -76,6 +76,16 @@ class Lang
     }
 
     /**
+     * 获取当前语言配置
+     * @access public
+     * @return array
+     */
+    public function getConfig(): array
+    {
+        return $this->config;
+    }
+
+    /**
      * 设置当前语言
      * @access public
      * @param string $lang 语言
@@ -243,6 +253,7 @@ class Lang
 
     /**
      * 自动侦测设置获取语言选择
+     * @deprecated
      * @access public
      * @param Request $request
      * @return string
@@ -282,6 +293,7 @@ class Lang
 
     /**
      * 保存当前语言到Cookie
+     * @deprecated
      * @access public
      * @param Cookie $cookie Cookie对象
      * @return void
