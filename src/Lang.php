@@ -253,10 +253,10 @@ class Lang
 
     /**
      * 自动侦测设置获取语言选择
-     * @deprecated
-     * @access public
      * @param Request $request
      * @return string
+     * @deprecated
+     * @access public
      */
     public function detect(Request $request): string
     {
@@ -293,10 +293,10 @@ class Lang
 
     /**
      * 保存当前语言到Cookie
-     * @deprecated
-     * @access public
      * @param Cookie $cookie Cookie对象
      * @return void
+     * @deprecated
+     * @access public
      */
     public function saveToCookie(Cookie $cookie)
     {

@@ -24,8 +24,8 @@ use Think\Component\Facade\Facade;
  * @method static array load(string|array $file, string $range = '') 加载语言定义(不区分大小写)
  * @method static bool has(string|null $name, string $range = '') 判断是否存在语言定义(不区分大小写)
  * @method static mixed get(string|null $name = null, array $vars = [], string $range = '') 获取语言定义(不区分大小写)
- * @method static string detect(\think\Request $request) 自动侦测设置获取语言选择
- * @method static void saveToCookie(\think\Cookie $cookie) 保存当前语言到Cookie
+ * @method static string detect(Request $request) 自动侦测设置获取语言选择
+ * @method static void saveToCookie(Cookie $cookie) 保存当前语言到Cookie
  */
 class Lang extends Facade
 {
@@ -36,6 +36,6 @@ class Lang extends Facade
      */
     protected static function getFacadeClass()
     {
-        return '\Think\Component\Lang\Lang';
+        return 'Think\Component\Lang\Lang';
     }
 }
